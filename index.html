@@ -4,84 +4,185 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Randal Roper</title>
+    <title>Randal's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
     <div class="hero">
-        
         <div class="hero-text-wrap">
-            <h1>Hi, I'm Randal Roper</h1>
-            <div class="secondarytextwrap">
-                <h2>Web Design</h2>
-                <h2>Graphic Design</h2>
-                <h2>Video Production</h2>
-            </div>
-           
+            <h1>I'm Randal Roper</h1>
+            <h2>Web Designer</h2>
         </div>
-        <img src="profile.png" alt="" class="profile">
-        <div class="whitebar"></div>
-        <div class="whitebar1"></div>
-        <div class="mainbar"></div>
+        <div class="navigation">
+            <a href="#" class="link">About</a>
+            <a href="#" class="link">My Work</a>
+            <a href="#" class="link">Contact</a>
+        </div>
     </div>
 
     <div class="about">
-        <div class="aboutmewrap">
-            <div class="aboutmainbar"></div>
-            <h1>About Me</h1>
-            <p>I am a creative hobbiest.  I am currently serving in a volunteer role at my church, where I am managing the <a class= "inline" href="https://www.youtube.com/channel/UCLAMCOIk8kaxwxyQetYrEbA">Livestream</a> service that is broadcasted every Sunday morning at 11:00 am.  I work in creating various graphic designs from sermon graphics to logos, and promo videos. I am married and have a wonderful daughter.  My goal would be to use the knowledge that I have to help further someone else.</p>
+        <h2>- About -</h2>
+        <div class="cardwrapper">
+            <div class="card">
+                <p>I am from Lawton Oklahoma.  I have a passion for creating. I love to bring great experiences to life.  I love spending time with my wonderful family. I'm married with a wonderful wife and 5 year old daughter.  I currently volunteer at my church doing various graphic work and running a livestream for their services.</p>
+
+            </div>
+            
+            <img src="./images/profilepic.JPG" alt="" class="cardtwo">
+            
+           
+            
+
         </div>
-        <div class="aboutwhitebar1"></div>
         
     </div>
 
-    <div class="skills">
-        <h1>SKILLS</h1>
-        <div class="iconwrapper">
-            <i class="fab fa-html5 large"></i>
-            <i class="fab fa-css3-alt large"></i>
-            <i class="fab fa-js large"></i>
-        </div>
-        <div class="skillsline">
-
-        </div>
-
-    </div>
-
-    <div class="mywork">
-        <h1>My Projects</h1>
-        <div class="projectwrappr">
-            <div class="project">
-                <img src="ccurchmockup.png" alt="" class="bigscreen">
-                <img src="fbwlawtonsmall.png" alt="" class="smallimg">
+    <div class="work">
+        <h3>- My Work -</h3>
+        <div class="workcardwrapper">
+            <div class="projectimgwrapper">
+                <img src="./images/cakeworkimage.jpg" alt="" class="projectimg">
                 <div class="info">
-                    <h2>fbwlawton.com</h2>
-                    <p>This is a Mock design. It is a redesign of my
-                        churchs website.
-                    </p>
-                    <div class="infobtncontainer">
-                        <a href="http://www.fbwlawton.com/" class="infolink">View Live Demo</a>
-                        <a href="#" class="infolink">About Project</a>
+                    <div class="linkwrapper">
+                        <a href="https://rcroper.github.io/heatherdesigns/" class="infolink">View Site</a>
+                        <a href="#" class="infolink">View Case Study</a>
+                        
                     </div>
+                    
+                    
                 </div>
             </div>
+            <div class="projectimgwrapper1">
+                <img src="./images/churchdesign.jpg" alt="" class="projectimg">
+                <div class="info2">
+                    <div class="linkwrapper">
+                        <a href="https://rcroper.github.io/fbw/" class="infolink">View Site</a>
+                        <a href="#" class="infolink">View Case Study</a>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+            
+          
+
         </div>
+
+       
+        
+
     </div>
 
     <div class="contact">
-        
-        <form action="">
-            <h1>Contact Me</h1>
-           <input class="name" type="text" placeholder="your name">
-           <input class="name" type="email" placeholder="email">
-           <textarea class="message" name="message" id="message" placeholder="your message" cols="30" rows="10"></textarea>
-           <input class="submit" type="submit" value="Submit">
+        <h1>Looking to Hire me?</h1>
+        <form class="form" action="" method="POST">
+            <input type="text" name="name" id="name" placeholder="Please enter your name" class="namefield">
+            <input type="email" name="email" id="email" placeholder="Plaese leave your email" class="namefield">
+            <textarea name="message" id="message" cols="30" rows="10" class="message" placeholder="Enter your message"></textarea>
+            <button type="submit"value="Send It" class="submit">Send It</button>
+            
         </form>
+        <h2>&copy copyright 2021</h2>
     </div>
+
+
+
+    
+    <script>
+        if (window.matchMedia("(max-width: 900px)").matches) {
+            window.addEventListener('scroll', function () {
+            let card = document.querySelector('.card');
+            
+            if(window.scrollY > 500) {
+                card.classList.add("nav-scrolled");
+            }
+        })
+
+        window.addEventListener('scroll', function () {
+            let cardtwo = document.querySelector('.cardtwo');
+            
+            if(window.scrollY > 500) {
+                cardtwo.classList.add("scrolled");
+            }
+            
+            
+        })
+        window.addEventListener('scroll', function () {
+            let Project = document.querySelector('.projectimgwrapper');
+            
+            if(window.scrollY > 1050) {
+                Project.classList.add("opacity");
+            }
+            
+            
+        })
+        window.addEventListener('scroll', function () {
+            let Project1 = document.querySelector('.projectimgwrapper1');
+            
+            if(window.scrollY > 1050) {
+                Project1.classList.add("opacity");
+            }
+            
+            
+        })
+            
+  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        }           
+
+        
+       
+        
+        
+        
+    </script>
+
+
+    
+
+            
+
+            
+
+
+
+        
+        
+        
+   
+    
     
 </body>
 </html>
