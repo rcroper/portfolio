@@ -11,7 +11,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.61)), url(./images/headerbg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.61)), url(headerbg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -312,7 +312,7 @@ body{
 
 
 .info{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.384)), url(./images/Video\ Cake1.gif);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.384)), url(Video\ Cake1.gif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 125%;
@@ -337,7 +337,7 @@ body{
 
 
 .info2{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.384)), url(./images/Church\ Design.gif);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.384)), url(Church\ Design.gif);
     
         
         background-position: top;
