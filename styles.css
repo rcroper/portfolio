@@ -3,6 +3,7 @@ body{
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    font-family: 'Bakersville',sans-serif;
 }
 
 .hero{
@@ -31,7 +32,7 @@ body{
 .hero-text-wrap h1{
     font-size: 5em;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    
     font-style: normal;
     font-weight:lighter;
     margin-bottom: 0;
@@ -52,7 +53,7 @@ body{
 .hero-text-wrap h2{
     font-size: 2.5em;
     color: white;
-    font-family: 'Alex Brush', sans-serif;
+    
     font-style: normal;
     margin-top: 3px;
     animation: floatinright 1.9s ease-in-out 1s forwards;
@@ -143,7 +144,7 @@ body{
     color: #071B21;
     font-size: 1.8em;
     text-align: center;
-    font-family: 'Alex Brush', sans-serif;
+    font-weight: lighter;
     margin-bottom: 100px;
     
 }
@@ -242,221 +243,196 @@ body{
 
 /* ------------------Work Section starts--------------------*/
 
-.work{
-    height: auto;
+.works{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 350px;
     width: 100vw;
-    background-color: #071B21;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 70px;
-    flex-direction: column;
+    position: relative;
     
 }
 
-.workcardwrapper{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-   
-    height: auto;
-    width: 80%;
-    flex-direction: row;
-    
-}
-
-.projectimgwrapper{
-    color: green;
-    height: 250px;
-    width: 400px;
+.title{
+    height: 60px;
+    width: 200px;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    transition: 1s ease;
-    opacity: 0;
-    transform: translateX(-20px);
-
+    position: absolute;
+    top:-10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
 }
 
-.projectimgwrapper1{
-    color: green;
-    height: 250px;
-    width: 400px;
+.title h1{
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Alex Brush',sans-serif;
+    font-weight: lighter;
+}
+
+.designs{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    transition: 1s ease;
-    opacity: 0;
-    transform: translateX(20px);
-
-}
-
-.opacity{
-    opacity: 1;
-    transform:translateX(0);
-}
-
-
-
-.projectimgwrapper:hover{
-    transform: translateY(-5px);
-}
-
-.projectimgwrapper1:hover{
-    transform: translateY(-5px);
-}
-
-
-
-.info{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.384)), url(Video\ Cake1.gif);
+    background-image: url(cake1.gif);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 125%;
-    image-rendering: optimizeQuality;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    background-size: 130% 130%;
+    text-align: center;
+    position: relative;
+    
+}
+
+.designs:nth-of-type(3) {
+    background-image: url(Church\ Design.gif);
+
+}
+
+.link{
+    display: block;
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 15px;
+    bottom: 20px;
+    left: 50%;
+    font-size: 1rem;
+    color: white;
+    z-index: 5;
     opacity: 0;
     transition: .5s ease;
-    overflow: hidden;
-    z-index: 5;
-    
-   
-
-}
-
-
-.info2{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.404), rgba(0, 0, 0, 0.384)), url(Church\ Design.gif);
-    
-        
-        background-position: top;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        image-rendering: optimizeQuality;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom:0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        border-radius: 15px;
-        opacity: 0;
-        transition: .5s ease;
-        overflow: hidden;
-        z-index: 5;
-        
-       
-    
-    }
-
-
-
-
-
-
-
-.projectimgwrapper:hover .info{
-    opacity: 1;
-}
-
-.projectimgwrapper1:hover .info{
-    opacity: 1;
-}
-
-.projectimgwrapper:hover .info2{
-    opacity: 1;
-}
-
-.projectimgwrapper1:hover .info2{
-    opacity: 1;
-}
-
-.info:hover .infolink{
-    transform: translateY(-14px);
-}
-
-.info2:hover .infolink{
-    transform: translateY(-14px);
-}
-
-
-
-.infolink{
+    transform: translateX(-50%);
     text-decoration: none;
-    font-size: 1.2em;
-    font-family: 'Alex Brush', sans-serif;
-    color: white;
     
-    position: relative;
-    z-index: 2;
-    opacity: 1;
-    transition: .5s ease;
-    
-
 }
 
-.infolink::after{
-    content: '';
-    height: 1.5px;
+.link::after{
+    height: 2px;
     width: 100%;
+    background-color: white;
     position: absolute;
     bottom: 0;
+    left:0;
+}
+
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: #2b133f;
+    transition: .5s ease;
+}
+
+.overlay1{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: #270707;
+    transition: .5s ease;
+}
+
+.designs:hover .link{
+    opacity: 1;
+    transform: translateY(-20px) translateX(-50px);
+}
+
+.designs:hover .link::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    transform: scaleX(0);
+}
+
+.designs:hover .link:hover{
+    opacity: .5;
+    transform: translateY(-20px) translateX(-50px);
+    transform-origin: left;
+    
+    
+}
+
+.designs:hover .link:hover::after{
+    transform: scaleX(1);
+    transition: .5s ease;
+    
+    
+}
+
+
+.designs:hover .overlay{
+    opacity: .8;
+}
+
+.designs:hover .overlay1{
+    opacity: .8;
+}
+
+.designs:hover  .mainh1{
+    line-height: 3rem;
+}
+
+.designs:hover .mainh1::after{
+    transform: translateX(-40px) scaleX(1);
+    
+}
+
+.designs:hover .mainh1::before{
+    transform: translateX(40px) translateY(6px) scaleX(1);
+    
+}
+
+.mainh1{
+    color: white;
+    font-size: 1.7rem;
+    font-family: 'Alex Brush', sans-serif;
+    font-weight: lighter;
+    line-height: 2.5rem;
+    position: relative;
+    transition: .5s ease;
+    letter-spacing: .2rem;
+    
+    
+}
+
+.mainh1::after{
+    content: '';
+    height: 2px;
+    width: 110%;
+    position: absolute;
+    top: 50%;
     left: 0;
     background-color: white;
-    transform: scale(0);
-    transform-origin: left;
+    transform: translateX(-40px) scaleX(0);
     transition: .5s ease;
-    opacity: 0;
+    transform-origin: left;
 }
 
-
-.infolink:hover::after{
-    transform: scale(1);
-    opacity: 1;
-}
-
-.projectimg{
+.mainh1::before{
+    content: '';
+    height: 2px;
+    width: 110%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background-color: white;
+    transform: translateX(40px) translateY(6px) scaleX(0);
+    transition: .5s ease;
+    transform-origin: right;
     
-    height: 250px;
-    width:400px;
-    border: 2px solid rgba(255, 255, 255, 0.603);
-    border-radius: 15px;
-    position: relative;
 }
 
 
-.work h3{
-    font-size: 1.8em;
-    color: white;
-    font-family: 'Alex Brush', sans-serif;
-    margin-bottom: 80px;
-}
-
-.linkwrapper{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    height: 23%;
-    width: 100%;
-    background-color: black;
-    z-index: 3;
-    position: relative;
-}
 
 /* ------------------Contact Section starts--------------------*/
 
@@ -641,37 +617,33 @@ body{
         margin-bottom: 50px;
     }
 
-    .cardwrapper{
-        width: 100vw;
-        flex-direction: column;
+    .works{
+        grid-template-columns: 1fr;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
     }
 
-    .card p{
-        font-size: 1rem;
-        transform: translateX(30px);
-    }
-
-    .card{
-        width: 80%;
-        justify-content: center;
-        padding: 1em;
-        transform: translateX(0px);
-    }
-
-    .cardtwo{
+    .designs{
         height: 350px;
-        width: 70%;
-        transform: translateY(-10px) rotate(10deg);
+       
     }
 
-    .workcardwrapper{
-        flex-direction: column;
-        width: 90%;
+    .designs:nth-of-type(3) {
+        background-image: url(Church\ Design.gif);
+       
+    
     }
 
-    .projectimgwrapper1{
-        margin: 20px;
-    }
+   
+
+   
+
+    
+
+    
+    
 
     .form{
         width: 90%;
